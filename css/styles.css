@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap');
+
+body {
+  background-color: #000000;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+
+}
+li {
+  list-style: none;
+}
+.section-hero {
+
+  position: relative;
+
+}
+
+.section-hero::before{
+  content: " ";
+  background: url(../img/bg-hero.jpg) no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0.35;
+  z-index: -1000;
+}
+.title{
+
+  font-size: 2rem;
+  font-weight: 800;
+
+}
+
+
+@media (min-width: 992px){
+    .netflix-padding{
+      padding: 70px 45px;
+  }
+    .netflix-card {
+      width: 100%;
+      padding: 75px 0;
+      max-width: 950px;
+      margin: 0 auto;
+      text-align: center;
+      z-index: 2;
+    }
+    .title{
+      overflow-wrap: break-word;
+      font-size: 3.5rem;
+      font-weight: 800;
+    
+    }
+}
+.text-card{
+    width: 52%;
+    height: 100%;
+    flex: 0 1 auto;
+    padding: 0 3rem 0 0;
+    z-index: 3;
+    font-size: 1.625rem;
+    font-weight: 400;
+}
+section {
+  border-bottom: 8px solid #222;
+}
+.btn{
+  border: none;
+
+}
+.btn-warning {
+  background-color: #de0611;
+}
+.btn-theme {
+  background-color: #de0611;
+  color: white;
+  padding: 1rem;
+}
+
+.single {
+  max-width: 650px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+.single .form-control {
+
+  border-color: transparent;
+}
+
+.single .form-control:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+.form-control{
+  padding-top: 1.7rem !important;
+  padding-bottom: 1.7rem !important;
+  padding-left: 1rem !important  ;
+
+}
+/*Acordeon*/
+
+.wrapper{
+  width:50%;
+}
+@media(max-width:992px){
+ .wrapper{
+  width:100%;
+} 
+}
+.panel-heading {
+  padding: 0;
+  border:0;
+}
+.panel-heading h4 {
+  margin-bottom: 1px;
+}
+.panel-title>a, .panel-title>a:active{
+	display:block;
+  padding:15px;
+  background: #303030;
+  color:white;
+	text-decoration:none;
+}
+.panel-heading  a:before {
+   float: right;
+   transition: all 0.5s;
+}
+.panel-heading  a.collapsed:after {
+}
+
+.panel-body{
+  background-color: #303030;
+  padding: 1rem;
+  padding-top: 0;
+  margin-bottom: 1rem;
+}
+a {
+  color: #757575;
+  text-decoration: none;
+}
+
+a:hover, a:focus {
+  color: inherit;
+}
+
+footer{
+  margin: 0 auto;
+  padding:0;
+  max-width: 85%;
+}
